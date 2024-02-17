@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@100..900&display=swap');
+
+body{
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*  ***  Buttons  *** */
+.btn-white{
+    border-color: black !important;
+}
+.btn-white:hover{
+    color: white;
+    background-color: black;
+}
+.btn-dark:hover{
+    color: black;
+    background-color: white;
+    border-color: black !important;
+}
+.btn-header{
+    color:black;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+.btn-header:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+/*  ***  Header  *** */
+.header-section{
+    background-color: black;
+    border-radius: 10px;
+    padding: 2rem;
+    overflow: hidden;
+}
+.header-section h1,
+ul{
+  color: aliceblue;
+   
+}
+.header-section-list{
+    list-style: none;
+    font-size: 15px;
+}
+/*  ***  Information Section  *** */
+.info-list{
+list-style: none;
+color: black;
+font-size: 14px;
+}
+.information{
+    margin: 0 auto;
+    width: 550px;
+    padding: 2rem;
+    background-color: #FAFAFA;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 10px;
+}
+.fa-galactic-republic {
+color: #FCC417;
+font-size: 1.6rem;
+}
+.info-text1 {
+    overflow: hidden;
+}
+.info-text1 p{
+font-weight: 500;
+font-size: 0.9rem;
+}
+.info-text2{
+    font-size: 15px;
+}
+.fa-circle{
+    color: black;
+    font-size: 5px;
+} 
+.fa-arrow-right{
+font-size: 15px;
+}
+.fa-circle-stop{
+    font-size: 1.6rem;
+   color: #D25116; 
+}
+.info-text-num{
+    background: #D9D9D9;
+    border-radius: 50%;
+   padding: 5px 15px;
+}
+/*  ***  Commets Section  *** */
+.comment-section{
+    overflow: hidden;
+    padding: 3rem;
+    background-color: #FAFAFA;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 10px;
+}
+.comment-section h5{
+    font-weight: 500;
+   font-size: 5rem;
+}
+.fa-message{
+    font-size: 1.3rem;
+}
+.comment-section span{
+   font-size: 1rem;
+   margin: 1rem;
+} 
+.comment-point p{
+margin: 0.1rem;
+font-size: 1.3rem;
+}
+.fa-star{
+    font-size: 0.9rem;
+    padding: 0.4rem;
+}
+.comment-line{
+    margin: 0.4rem;
+    width: 60%;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 8px; 
+}
+.comment-boxes{
+    background-color:  #FAFAFA;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    padding: 1.8rem;
+    overflow: hidden;
+}
+.comment-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    padding: 48px;
+}
+.comment-boxes h6{
+    font-weight: 600;
+}
+/* Media query screens */
+@media screen and (max-width: 1024px) {
+    .comment-box{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .comment-box {
+        grid-template-columns: 1fr;
+        padding: 24px;
+      }
+  }
+ 
+  @media screen and (max-width: 480px) {
+    .comment-box {
+      grid-template-columns: 1fr;
+      padding: 24px;
+    }
+  }
+/**  Footer section  *** */
+footer{
+background-color: #FAFAFA;
+}
+.footer-contact p{
+    display: inline-block;
+    padding: 10px;
+}
+.footer-icons{
+    font-size: 1.2rem;
+    background-color: #E9E9E9;
+    padding: 10px;
+    border-radius: 50%;
+}
+.footer-icons:hover{
+ color: rgb(23, 33, 146);
+}
+
+/* ******** Up Scroll ******** */
+.back-to-top {
+	position: fixed;
+	bottom: 1.8rem;
+	right: 1.8rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+    border: 2px solid black;
+	border-radius: 50%;
+	padding: 1rem;
+    z-index: 10;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+    color: black;
+}
+.back-to-top:hover {
+	color: white;
+    border-color: white;
+    background: black;
+}
